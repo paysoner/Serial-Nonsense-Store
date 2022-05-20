@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Login - Serial Nonsense</title>
+        <style>
+            body
+            {
+                background-color: black;
+                color: white;
+                font-size: 25px;
+                font-family: arial;
+            }
+            .header
+            {
+                background: rgb(57,174,255);    
+                background: linear-gradient(90deg, rgba(57,174,255,1) 0%, rgba(9,9,121,1) 81%, rgba(160,3,164,1) 100%);
+                padding: 10px;
+            }
+            input
+            {
+                background-color: #4ddbff;
+                border: none;
+                margin: 3px;
+                font-size: 25px;
+                font-family: arial;
+                border-radius: 5px;
+            }
+            input:hover
+            {
+                background-color: #8600b3;
+                color: white;
+            }
+            form
+            {
+                text-align: center;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='header'><img src='logo.png' height='150'></div>
+        <div style="text-align: center; background-color: #333333; margin-right: auto; margin-left: auto; width: 50%">
+            <h2>Login</h2>
+            <form action="index.php" method="post">
+            Username:<br>
+            <input name="uname" type="text" size="30">
+            <br>
+            Password:<br>
+            <input name="passw" type="password" size="30"><br>
+            <input type="submit" name="submit" value="Go!">
+            </form>
+            <p>Don't have an account?</p>
+            <form action="newaccount.html" method="post">
+                <input type="submit" name="submit" value="Create one now!">
+            </form>
+        </div>
+    </body>
+</html>
